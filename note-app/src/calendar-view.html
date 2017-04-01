@@ -13,6 +13,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/paper-date-picker/paper-date-picker.html">
 <link rel="import" href="../bower_components/paper-date-picker/paper-date-picker-icons.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 
 
 <dom-module id="calendar-view">
@@ -26,14 +27,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
 
     <div class="card">
-      <paper-dialog id="dialog" class="paper-date-picker-dialog" modal
-        on-iron-overlay-closed="dimissDialog">
-          <paper-date-picker id="picker" date= "[[date]]"></paper-date-picker>
-          <div class="buttons">
-            <paper-button dialog-confirm>OK<paper-button>
-            <paper-button dialog-dismiss>Cancel<paper-button>
-          </div>
-      </paper-dialog>
+      <paper-date-picker id="calendar"></paper-date-picker>
+      <paper-button raised>OK</paper-button>
+      <paper-button float:right; raised>Cancel</paper-button>
+      <!-- <paper-dialog id="dialog" class="paper-date-picker-dialog" modal -->
+        <!-- on-iron-overlay-closed="dimissDialog"> -->
+          <!-- <paper-date-picker id="picker" date= "[[date]]"></paper-date-picker> -->
+          <!-- <div class="buttons"> -->
+            <!-- <paper-button dialog-confirm>OK<paper-button> -->
+            <!-- <paper-button dialog-dismiss>Cancel<paper-button> -->
+          <!-- </div> -->
+      <!-- </paper-dialog> -->
     </div>
   </template>
 

@@ -11,6 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/input-search/input-search.html">
 
 <dom-module id="list-view">
   <template>
@@ -21,7 +22,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         padding: 10px;
       }
     </style>
-
+    <!-- <input-search placeholder="Search" ></input-search> -->
+    <input-search class="searcher"></input-search>
+    <style>
+      .searcher {
+      border: 0.5;
+      background: #e3e5ea;
+      color: #fff;
+      border-radius: 22px;
+      padding: 0 8px;
+    }
+    </style>
     <div class="card">
       <h1>hello i'm jina</h1>
       <paper-button raised>delete</paper-button>

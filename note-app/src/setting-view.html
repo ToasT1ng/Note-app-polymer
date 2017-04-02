@@ -12,7 +12,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="../bower_components/gold-password-input/gold-password-input.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
-<dom-module id="pw-view">
+<dom-module id="setting-view">
   <template>
     <style include="shared-styles">
       :host {
@@ -23,15 +23,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
 
     <div class="card">
+      <h1>Changing PW?</h1>
       <gold-password-input label="Current Password"></gold-password-input>
       <gold-password-input label="New Password" strength-meter></gold-password-input>
+      <paper-button raised>OK</paper-button>
+    </div>
+    <div class="card">
+      <h1>Log Out?</h1>
       <paper-button raised>OK</paper-button>
     </div>
   </template>
 
   <script>
     Polymer({
-      is: 'pw-view',
+      is: 'setting-view',
     });
   </script>
 </dom-module>
